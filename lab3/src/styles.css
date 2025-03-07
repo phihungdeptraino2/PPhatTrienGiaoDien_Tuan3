@@ -1,169 +1,329 @@
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    background-color: azure;
-  }
-  
-  /* Bố cục chính */
-  .app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  /* NAVBAR */
-  .navbar {
-    position: fixed;
-    display: flex;
-    top: 0;
-    left: 0;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    background-color: white;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Logo */
-  .navbar-logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .brand-name {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ff4081;
-    margin-left: 5px;
-  }
-  
-  /* Thanh tìm kiếm */
-  .search-bar {
-    display: flex;
-    align-items: center;
-    background: #f1f1f1;
-    border-radius: 20px;
-    padding: 5px;
-  }
-  
-  .search-bar input {
-    border: none;
-    background: none;
-    padding: 5px;
-    outline: none;
-  }
-  
-  .search-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Menu */
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-links li {
-    cursor: pointer;
-    font-size: 16px;
-    color: #666;
-  }
-  
-  .nav-links li:hover {
-    color: black;
-  }
-  
-  /* Recipe Box & Avatar */
-  .user-section {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .recipe-box {
-    background-color: #ffb3c7;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 20px;
-    color: #ff4081;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .recipe-box:hover {
-    background-color: #ff4081;
-    color: white;
-  }
-  
-  .avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  /* BODY */
-  .container {
-    margin-top: 40px;
-    display: flex;
-    min-height: 100vh;
-    padding: 20px;
-    color: black;
-  
-  }
-  
-  /* Sidebar (Bộ lọc) */
-  .sidebar {
-    width: 300px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Nội dung chính */
-  .main-content {
-    flex: 1;
-    padding: 40px;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: azure;
+}
 
-  }
-  
-  /* Tag styles */
-  .tags {
-    margin-top: 20px;
-  }
-  
-  .tag {
-    display: inline-block;
-    background: pink;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 15px;
-  }
-  
-  
-  /* FOOTER */
-  .footer {
-   
-    background: #f8f9fa;
-    text-align: center;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+/* Bố cục chính */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4081;
+  margin-left: 5px;
+}
+
+/* Thanh tìm kiếm */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  padding: 5px;
+  outline: none;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Menu */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+}
+
+.nav-links li:hover {
+  color: black;
+}
+
+/* Recipe Box & Avatar */
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recipe-box {
+  background-color: #ffb3c7;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #ff4081;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.recipe-box:hover {
+  background-color: #ff4081;
+  color: white;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* BODY */
+.container {
+  margin-top: 40px;
+  display: flex;
+  min-height: 80vh;
+  padding: 20px;
+  color: black;
+  /* width: 100%; */
+}
+
+/* Sidebar (Bộ lọc) */
+
+/* .sidebar {
+  width: 35%;
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 60px 40px;
+} */
+
+/* Nội dung chính */
+.main-content {
+  padding: 40px;
+  text-align: center;
+  width: 60%;
+  margin-left: 100px;
+  border: black;
+}
+
+/* Tag styles */
+.tags {
+  margin-top: 20px;
+}
+
+.tag {
+  display: inline-block;
+  background: pink;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 15px;
+}
+.nd1 {
+  display: flex;
+  flex-direction: column; /* Sắp xếp theo cột */
+  align-items: center; /* Căn giữa nội dung */
+  gap: 20px; /* Khoảng cách giữa các phần */
+  background-color: #181818;
+  margin-right: 200;
+}
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between; /*Phân chia khoảng cách giữa các phần*/
+  flex-wrap: wrap; /* Đảm bảo các phần tự động xuống dòng nếu không đủ không gian */
+  padding: 20px;
+  background-color: #181818;
+}
+
+.footer-section {
+  background-color: #181818;
+  /* flex: 1; */
+  /* flex: 1; Giúp các phần có kích thước bằng nhau */
+  margin: 0 20px;
+  min-width: 200px; /* Đảm bảo không quá nhỏ khi thu hẹp */
+}
+
+.footer-section h3 {
+  background-color: #181818;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer-section ul {
+  color: white;
+  background-color: #181818;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  background-color: #181818;
+  color: white;
+  margin-bottom: 8px;
+}
+.footer-section p {
+  background-color: #181818;
+  color: white;
+}
+
+.footer-section a {
+  background-color: #181818;
+  color: white;
+  text-decoration: none;
+}
+
+.newsletter {
+  background-color: #181818;
+  margin-top: 10px;
+}
+
+.newsletter input {
+  padding: 8px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.newsletter button {
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #555;
+}
+/* Main Container */
+.filters {
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.filters-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Filter Section */
+.filter-section {
+  margin-bottom: 20px;
+}
+
+/* Section Title */
+.filter-section h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Checkbox Styling */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.checkbox-container input {
+  accent-color: #e91e63;
+}
+
+/* Slider */
+.slider {
+  width: 100%;
+  margin-top: 5px;
+  appearance: none;
+  height: 4px;
+  background: #e91e63;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Time Labels */
+.time-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Ratings */
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rating-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.rating-label input {
+  accent-color: #e91e63;
+}
+
+/* Apply Button */
+.apply-btn {
+  width: 100%;
+  padding: 10px;
+  background: #e91e63;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background: #d81b60;
+}
